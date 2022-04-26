@@ -11,12 +11,12 @@
 #container{
     background-color: aquamarine;
     width: 80%;
-    height: 1000px;
+    height: 0 auto;
     margin: 0 auto;
 }
 
-header{
-    background-color: blue;
+.menu{
+    background-color: gold;
     width: 100%;
     height: 150px;
     text-align: center;
@@ -24,7 +24,81 @@ header{
 
 #banner{
     width: 100%;
-    height: 500px;
+    height: 300px;
     text-align: center;
     background-color: brown;
+}
+
+#destaque{
+    width: 100%;
+    height: 300px;
+}
+
+.destaque-colunas{
+    width: 50%;
+    height: 300px;
+    float: left;
+    background-color: chartreuse;
+    border: 2px double;
+}
+
+#categorias{
+    width: 100%;
+    height: 300px;
+}
+
+.categoria-colunas{
+    width: 25%;
+    height: 300px;
+    float: left;
+    background-color: coral;
+    border: 2px solid;
+}
+
+.vermelho{
+    background-color: red;
+}
+
+.azul{
+    background-color: blue;
+}
+
+#rodape{
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+    float: left;
+    text-align: center;
+}
+
+/* site mobile */
+
+@media only screen and (max-width: 700px){
+
+    #container{
+        width: 100%;
+        height: 0 auto;
+    }
+
+    .menu{
+        height: 75px;
+        width: 100%;
+        background-color: greenyellow;
+    }
+
+    #banner{
+        height: 150px;
+        width: 100%;
+        background-color: aquamarine;
+    }
+
+    .destaque-colunas{
+        width: 100%;
+        background-color: crimson;
+    }
+
+    .categoria-colunas{
+        width: 50%;
+        background-color: goldenrod;
+    }
 }
